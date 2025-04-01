@@ -22,7 +22,7 @@ fi
 
 curl -o "/opt/api/menu.sh" -f "https://raw.githubusercontent.com/UlekBR/ApiMultiCheckuser/main/menu.sh"
 
-chmod +x /opt/api/rtcheck
+chmod +x /opt/api/apicheck
 chmod +x /opt/api/menu.sh
 
 ln -s /opt/api/menu.sh /usr/local/bin/apicheck
