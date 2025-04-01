@@ -1,4 +1,4 @@
-# RtunnelCheckuser
+# ApiMultiCheckuser
 
 para fazer a instalação rode o seguinte comando !
 
