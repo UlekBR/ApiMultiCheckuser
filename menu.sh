@@ -72,7 +72,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/opt/rt/apicheck
+ExecStart=/opt/api/apicheck
 Restart=always
 
 [Install]
