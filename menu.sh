@@ -14,12 +14,13 @@ get_public_ip() {
 
 
 verificar_processo() {
-    if pgrep -x "apicheck" > /dev/null; then
+    if ps aux | grep -v grep | grep -q "apicheck"; then
         return 0
     else
         return 1
     fi
 }
+
 
 
 while true; do
