@@ -67,7 +67,8 @@ while true; do
             sudo rm /etc/systemd/system/apicheck.service
             sudo systemctl daemon-reload
             rm -f /opt/api/port
-            echo -e "\nServiço API-CHECKUSER parado e removido."
+            clear
+            echo -e "\nServiço parado"
         else
             read -p $'\nDigite a porta que deseja usar: ' port
             echo "$port" > /opt/api/port
@@ -90,9 +91,9 @@ WantedBy=multi-user.target" | sudo tee /etc/systemd/system/apicheck.service > /d
             sudo systemctl daemon-reload
             sudo systemctl enable apicheck.service
             sudo systemctl start apicheck.service 2>/dev/null
+            clear
+            echo -e "\nO Link estará no Menu."
         fi
-        clear
-        echo -e "\nO Link estará no Menu."
         read -p "Pressione a tecla enter para voltar ao menu."
         ;;
     "2")
